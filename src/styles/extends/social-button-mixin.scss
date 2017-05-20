@@ -1,0 +1,10 @@
+/* color-gray, color-orange by default */
+@mixin social-button($color: $color-gray, $color-hover: $color-orange){
+	color: $color;
+	transition: $transition;
+	text-decoration: none;
+
+	&:hover{
+		color: $color-hover;
+	}
+}

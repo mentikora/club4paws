@@ -94,6 +94,12 @@
 	}
 }
 
+.footer-socials{
+	a{
+		@include social-button();
+	}
+}
+
 .footer-subscribe-form{
 	display: flex;
 

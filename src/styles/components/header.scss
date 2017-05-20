@@ -24,20 +24,14 @@
 
 		a{
 			@include header-top-item-proportions;
+			@include social-button;
 
 			display: block;
-			text-decoration: none;
-			color: #898989;
-			transition: $transition;
 			padding: {
 				left: 20px;
 				right: 20px;
 			}
 			border-right: 1px solid $color-lightgray;
-
-			&:hover{
-				color: $color-orange;
-			}
 
 			&:first-child{
 				border-left: 1px solid $color-lightgray;				
