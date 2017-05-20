@@ -11,6 +11,17 @@
 		height: 40px;
 		line-height: 40px;
 		margin-bottom: 15px;
+
+		font:{
+			family: $rubik;
+			size: 16px;
+		}
+		color: $color-gray;
+
+		b{
+			text-transform: uppercase;
+			font-weight: 700;
+		}
 	}
 }
 
