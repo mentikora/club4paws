@@ -462,3 +462,7 @@ template {
 
 /* CUSTOM */
 p{margin: 0;}
+ol, ul{
+  margin: 0;
+  list-style-type: none;
+}

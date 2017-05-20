@@ -1,0 +1,75 @@
+#header{
+
+}
+
+@mixin header-top-item-proportions{
+	height: 40px;
+	line-height: 40px;
+}
+
+.header-top{
+	padding: {
+		left: 50px;
+		right: 50px;
+	}
+	height: 40px;
+
+	border-bottom: 1px solid $color-lightgray;	
+
+	&-socials{
+		@include header-top-item-proportions;
+
+		float: left;
+		display: flex;
+
+		a{
+			@include header-top-item-proportions;
+
+			display: block;
+			text-decoration: none;
+			color: #898989;
+			transition: $transition;
+			padding: {
+				left: 20px;
+				right: 20px;
+			}
+			border-right: 1px solid $color-lightgray;
+
+			&:hover{
+				color: $color-orange;
+			}
+
+			&:first-child{
+				border-left: 1px solid $color-lightgray;				
+			}
+		}
+	}
+	&-consultation{
+		@include header-top-item-proportions;
+
+		float: left;
+		border-right: 1px solid $color-lightgray;
+
+		padding: {
+			left: 20px;
+			right: 20px;
+		}
+
+		text-transform: uppercase;
+		font: {
+			size: 14px;
+			family: $rubik;
+		}
+		color: $color-lightgray;
+		b{
+			margin-right: 5px;
+			color: $color-gray;
+			font-weight: 700;
+		}
+	}
+	&-change-lang{
+		@include header-top-item-proportions;
+
+		float: right;
+	}
+}
