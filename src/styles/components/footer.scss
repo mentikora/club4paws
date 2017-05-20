@@ -1,0 +1,150 @@
+#footer{}
+
+.footer-top{
+	background-color: $footer-top-bg;
+	padding: {
+		top: 50px;
+		bottom: 50px;
+	}
+
+	.text{
+		height: 40px;
+		line-height: 40px;
+		margin-bottom: 15px;
+	}
+}
+
+.footer-list-style{
+	padding: 0;
+
+	li{
+		margin-bottom: 20px;
+	}
+	a{
+		color: $color-gray;
+		line-height: 16px;
+		font: {
+			size: 16px;
+			weight: 700;
+		}
+		text: {
+			transform: uppercase;
+			decoration: none;
+		}
+		transition: $transition;
+
+		&:hover{
+			color: $color-orange;
+		}
+	}
+
+	&-extended li:not(:first-child) a{
+		font-weight: normal;
+	}
+}
+
+.footer-bottom{
+	background-color: $footer-bottom-bg;
+}
+
+.copyrights-wrapper{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	height: 50px;
+
+	border-top: 1px solid $color-gray;
+
+	text: {
+		transform: uppercase;
+	}
+	font: {
+		size: 14px;
+		family: $rubik;
+	}
+	color: #898989;
+	.copyright{}
+	.welldo{
+		a{
+			text-decoration: none;
+			color: $color-orange;
+
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.footer-info{
+	padding: {
+		top: 30px;
+		bottom: 30px;
+	}
+}
+
+.kormotech-text{
+	margin-top: 15px;
+	color: #898989;
+	line-height: 16px;
+	font: {
+		size: 16px;
+		family: $rubik;
+	}
+}
+
+.footer-subscribe-form{
+	display: flex;
+
+	&__title{
+		margin-bottom: 20px;
+		font: {
+			size: 16px;
+			family: $rubik;
+		}
+		line-height: 16px;
+		color: $color-white;
+		text-transform: uppercase;
+	}
+	&__input{
+		flex-grow: 1;
+
+		padding: 8px 2px;
+		margin: {
+			right: 10px;
+		}
+		background-color: inherit;
+		outline: 0;
+		border: {
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 1px solid $color-orange;
+		}
+		
+		font: {
+			size: 14px;
+			family: $rubik;
+		}
+		color: $color-gray;
+	}
+	&__submit{
+		width: 30px;
+		height: 30px;
+		padding: 0;
+		outline: 0;
+		border: 0;
+		cursor: pointer;
+		background: {
+			color: inherit;
+			image: url('#{$images-path}paw_button.svg');
+			repeat: no-repeat;
+			position: 50%;
+		}
+	}
+}
+
+.footer-images{
+	text-align: center;
+}
