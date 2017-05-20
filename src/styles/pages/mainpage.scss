@@ -1,0 +1,126 @@
+.heading-background{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 450px;
+
+	background: {
+		size: cover;
+		position: 50%;
+		repeat: no-repeat;
+		attachment: fixed;
+	}
+}
+
+.section-welcome{
+	background:{
+		image: url(#{$images-path}welcome-slide.jpg);
+		repeat: no-repeat;
+		attachment: fixed;
+		position: 50% bottom;
+		size: cover; 	
+	} 
+	min-height: 100vh;
+
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	.heading-large{
+		color: $color-orange;
+	}
+	.text__lg{
+		color: rgba($color-black, .7);
+	}
+}
+
+.section-services{
+	.heading-large{
+		text-align: center;
+		margin:{
+			top: 175px;
+			bottom: 130px;
+		}
+	}
+	.col-md-4{
+		height: $service-item-height;
+		margin-bottom: 30px;
+	}
+}
+
+.section-portfolio{
+	.heading-background{
+		margin:{
+			top: 130px;
+			bottom: 95px;
+		}
+		background-image: url(#{$images-path}heading-bg-portfolio.jpg);
+		color: $color-white;
+	}
+}
+
+.section-business{
+	.heading-background{
+		margin:{
+			top: 95px;
+			bottom: 130px;
+		}
+		background-image: url(#{$images-path}heading-bg-business.jpg);
+		color: $color-white;
+	}
+}
+
+.section-auditing{
+	background-color: $color-orange;
+	display: flex;
+	align-items: center;
+  height: 495px;
+	h2{
+		margin-top: 0;
+		color: $color-white;
+		font:{
+			size: 45px;
+			weight: 900;
+			family: $raleway;
+		}
+		text:{
+			align: center;
+			transform: uppercase;
+		}
+	}
+	.text{
+		color: rgba($color-white, .7);
+		text-align: center;
+	}
+
+	form{
+		display: flex;
+		justify-content: center;
+		margin-top: 30px;
+		.input-jiro-wrapper{
+			margin-right: 30px;
+		}
+	}
+}
+
+.section-news{
+	padding-bottom: 430px;
+
+	.heading-large{
+		margin-top: 130px;
+		margin-bottom: 130px;
+		text-align: center;
+	}
+	.news-filter-tabs{
+		margin-bottom: 60px;
+	}
+
+	.btn-big{
+		margin: {
+			top: 20px;
+			right: auto;
+			left: auto;
+		}
+	}
+}
