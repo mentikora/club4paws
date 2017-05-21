@@ -2,14 +2,42 @@
 
 .premium-ration-item{
 	text-transform: uppercase;
-	padding: {
-		top: 70px;
-		bottom: 20px;
+	
+	@media(max-width: $screen-sm){
+		text-align: center;
+	}
+	@media(max-width: $screen-lg){
+		padding: {
+			top: 30px;
+			bottom: 30px;
+		}
+	}
+	@media(min-width: $screen-lg-max){
+		padding: {
+			top: 70px;
+			bottom: 50px;
+		}
 	}
 
 	> .row{
 		display: flex;
 		align-items: center;
+
+		@media(max-width: $screen-md){
+			flex-direction: column;
+
+			> div:not(.premium-ration-item__image){
+				order: 2;
+			}
+		}
+	}
+
+	&__text,
+	&__title,
+	&__button{
+		@media(min-width: $screen-sm-max){
+			margin-left: 45px;
+		}
 	}
 
 	&__text{
@@ -26,16 +54,26 @@
 			size: 16px;
 			family: $rubik;
 		}
+
 	}
 
 	&__title{
-		margin: 0;
-		color: $color-orange;
-		line-height: 55px;
+		margin: {
+			top: 0;
+			bottom: 0;
+		}
+		
 		font:{
-			size: 50px;
 			family: $raleway;
 			weight: 900;
+		}
+		@media(max-width: $screen-xs){
+			font-size: 35px;
+			line-height: 40px;
+		}
+		@media(min-width: $screen-xs-max){
+			font-size: 50px;
+			line-height: 55px;
 		}
 	}
 
@@ -89,7 +127,7 @@
 		img{
 			@extend .img-responsive;
 			
-			@media(min-width: $screen-lg-max){
+			@media(min-width: $screen-md-max){
 				padding: {
 					left: 50px;
 					right: 50px;
