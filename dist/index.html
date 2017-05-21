@@ -45,7 +45,32 @@
 	<!-- main -->
 	<main id="wrapper">
 		
-		<!-- mainpage content -->
+		<div class="mainpage-slider-wrapper">
+			<div>
+				<div class="msw-slide" style="background-image: url('images/mainpage-slide-1.jpg')">
+					<div class="msw-slide-content container">
+						<div class="msw-slide-content__title">
+							ДАРУЄМО ВАМ <br>
+							ТА ВАШИМ <br> 
+							УЛЮБЛЕНЦЯМ <br>
+							НАЙКРАЩІ ЕМОЦІЇ 
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="msw-slide" style="background-image: url('images/mainpage-slide-2.jpg')">
+					<div class="msw-slide-content container">
+						<div class="msw-slide-content__title">
+							ДАРУЄМО ВАМ
+							ТА ВАШИМ
+							УЛЮБЛЕНЦЯМ
+							НАЙКРАЩІ ЕМОЦІЇ
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 	</main>
 
@@ -141,6 +166,22 @@
 			</div>
 		</div>
 	</footer>
-
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="/scripts/slick.min.js"></script>
+	
+	<script>
+		$('.mainpage-slider-wrapper').slick({
+			dots: true,
+		  infinite: true,
+		  speed: 500,
+		  fade: true,
+		  cssEase: 'linear',
+		  prevArrow: '<button type="button" class="slick-prev"></button>',
+		  nextArrow: '<button type="button" class="slick-next"></button>'
+		  /*appendArrows: $('.slider-arrow-nav'),
+		  appendDots: $('.slider-dots-wrapper')*/
+		});
+	</script>
 </body>
 </html>

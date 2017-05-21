@@ -19,5 +19,19 @@ $images-path: "/images/";
 $transition: all .23s ease-in-out;
 $radius-circle: 50%; 
 
+/* Media */
+$screen-xs-max: 480px; 
+$screen-xs: $screen-xs-max - 1;
+
+$screen-sm-max: 768px;
+$screen-sm: $screen-sm-max - 1;
+
+$screen-md-max: 980px;
+$screen-md: $screen-md-max - 1;
+
+$screen-lg-max: 1024px;
+$screen-lg: $screen-lg-max - 1;
+
+
 
 
