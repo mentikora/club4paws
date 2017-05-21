@@ -1,0 +1,100 @@
+.premium-ration-wrapper{}
+
+.premium-ration-item{
+	text-transform: uppercase;
+	padding: {
+		top: 70px;
+		bottom: 20px;
+	}
+
+	> .row{
+		display: flex;
+		align-items: center;
+	}
+
+	&__text{
+		display: inline-block;
+
+		line-height: 16px;
+		color: $color-gray;
+		
+		margin: {
+			bottom: 25px;
+		}
+		
+		font: {
+			size: 16px;
+			family: $rubik;
+		}
+	}
+
+	&__title{
+		margin: 0;
+		color: $color-orange;
+		line-height: 55px;
+		font:{
+			size: 50px;
+			family: $raleway;
+			weight: 900;
+		}
+	}
+
+	&__button{
+		display: inline-block;
+		height: 75px;
+		line-height: 75px;
+		padding: {
+			left: 40px;
+			right: 40px;
+		}
+		margin: {
+			top: 50px;
+		}
+
+		box-shadow: 0 0 50px 0 rgba(0,0,0, .2);
+		border-radius: 45px;
+		transition: $transition;
+		
+		text-decoration: none;
+		color: $color-gray;
+		font: {
+			size: 18px;
+			family: $rubik;
+			weight: 900;
+		}
+
+		&:hover{
+			box-shadow: 0 0 25px 0 rgba(0,0,0, .2);
+		}
+	}
+
+	&__cats{
+		.premium-ration-item__title{
+			color: $color-orange;
+		}
+		.premium-ration-item__button:hover{
+			color: $color-orange;
+		}
+	}
+	&__dogs{
+		.premium-ration-item__title{
+			color: $color-darkblue;
+		}
+		.premium-ration-item__button:hover{
+			color: $color-darkblue;
+		}
+	}
+
+	&__image{
+		img{
+			@extend .img-responsive;
+			
+			@media(min-width: $screen-lg-max){
+				padding: {
+					left: 50px;
+					right: 50px;
+				}
+			}
+		}
+	}
+}
