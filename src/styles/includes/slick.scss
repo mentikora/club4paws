@@ -102,16 +102,12 @@
 
 /* Custom */
 .slick-arrow{
-    width: 50px;
-    height: 106px;
-
     border: 0;
     outline: 0;
 
     position: absolute;
     z-index: 100;
     top: 50%;
-    margin-top: -53px;
 
     cursor: pointer;
     background: {
@@ -123,6 +119,17 @@
     color: #050505;
 
     transition: $transition;
+    
+    @media(max-width: $screen-xs){
+        width: 35px;
+        height: 56px;
+        margin-top: -28px;
+    }
+    @media(min-width: $screen-xs-max){
+        width: 50px;
+        height: 106px;
+        margin-top: -53px;
+    }
 
     &:hover{
         background: {
@@ -158,6 +165,7 @@
 }
 
 .slick-dots{
+    padding: 0;
     position: absolute;
     bottom: 50px;
     left: 0;

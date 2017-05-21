@@ -2,9 +2,18 @@
 
 .footer-top{
 	background-color: $footer-top-bg;
-	padding: {
-		top: 50px;
-		bottom: 50px;
+	
+	@media(min-width: $screen-sm-max){
+		padding: {
+			top: 25px;
+			bottom: 25px;
+		}	
+	}
+	@media(min-width: $screen-sm-max){
+		padding: {
+			top: 50px;
+			bottom: 50px;
+		}	
 	}
 
 	.text{
@@ -14,9 +23,15 @@
 
 		font:{
 			family: $rubik;
-			size: 16px;
 		}
 		color: $color-gray;
+
+		@media(max-width: $screen-sm){
+			font-size: 14px;
+		}
+		@media(min-width: $screen-sm-max){
+			font-size: 16px;
+		}
 
 		b{
 			text-transform: uppercase;
@@ -28,21 +43,38 @@
 .footer-list-style{
 	padding: 0;
 
+	@media(max-width: $screen-sm){
+		margin: {
+			top: 20px;
+			bottom: 20px;
+		}
+	}
+
 	li{
-		margin-bottom: 20px;
+		@media(max-width: $screen-sm){
+			margin-bottom: 10px;
+		}
+		@media(min-width: $screen-sm-max){
+			margin-bottom: 20px;
+		}
 	}
 	a{
 		color: $color-gray;
 		line-height: 16px;
-		font: {
-			size: 16px;
-			weight: 700;
-		}
+		font-weight: 700;
+
 		text: {
 			transform: uppercase;
 			decoration: none;
 		}
 		transition: $transition;
+
+		@media(max-width: $screen-sm){
+			font-size: 14px;
+		}
+		@media(min-width: $screen-sm-max){
+			font-size: 16px;
+		}
 
 		&:hover{
 			color: $color-orange;
@@ -63,8 +95,6 @@
 	justify-content: space-between;
 	align-items: center;
 
-	height: 50px;
-
 	border-top: 1px solid $color-gray;
 
 	text: {
@@ -75,6 +105,17 @@
 		family: $rubik;
 	}
 	color: #898989;
+	@media(min-width: $screen-sm-max){
+		height: 50px;
+	}
+	@media(max-width: $screen-sm){
+		padding: {
+			top: 10px;
+			bottom: 10px;
+		}
+		flex-direction: column;
+		align-items: center;
+	}
 	.copyright{}
 	.welldo{
 		a{
@@ -93,19 +134,39 @@
 		top: 30px;
 		bottom: 30px;
 	}
-}
 
-.kormotech-text{
-	margin-top: 15px;
-	color: #898989;
-	line-height: 16px;
-	font: {
-		size: 16px;
-		family: $rubik;
+	.footer-logo{
+		@media(min-width: $screen-xs-max) and (max-width: $screen-md){
+			width: 50%;
+			display: block;
+			margin: {
+				left: auto;
+				right: auto;
+			}
+		}
+	}
+
+	.kormotech-text{
+		margin-top: 15px;
+		color: #898989;
+		line-height: 16px;
+		font: {
+			size: 16px;
+			family: $rubik;
+		}
+		@media(max-width: $screen-xs){
+			display: none;
+		}
+		@media(max-width: $screen-md){
+			text-align: center;
+		}
 	}
 }
 
 .footer-socials{
+	@media(max-width: $screen-md){
+		text-align: center;
+	}
 	a{
 		@include social-button();
 	}
@@ -113,6 +174,10 @@
 
 .footer-subscribe-form{
 	display: flex;
+
+	@media(max-width: $screen-md){
+		margin-bottom: 20px;
+	}
 
 	&__title{
 		margin-bottom: 20px;
@@ -123,6 +188,11 @@
 		line-height: 16px;
 		color: $color-white;
 		text-transform: uppercase;
+
+		@media(max-width: $screen-md){
+			margin-top: 20px;
+			text-align: center;
+		}
 	}
 	&__input{
 		flex-grow: 1;

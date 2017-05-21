@@ -8,13 +8,18 @@
 }
 
 .header-top{
-	padding: {
-		left: 50px;
-		right: 50px;
-	}
-	height: 40px;
-
 	border-bottom: 1px solid $color-lightgray;	
+
+	@media(max-width: $screen-md){
+		min-height: 40px;
+	}
+	@media(min-width: $screen-md-max){
+		height: 40px;
+		padding: {
+			left: 50px;
+			right: 50px;
+		}
+	}
 
 	&-socials{
 		@include header-top-item-proportions;
@@ -40,6 +45,10 @@
 	}
 	&-consultation{
 		@include header-top-item-proportions;
+
+		@media(max-width: $screen-sm-max){
+			display: none;
+		}
 
 		float: left;
 		border-right: 1px solid $color-lightgray;

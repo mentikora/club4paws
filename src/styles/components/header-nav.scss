@@ -7,9 +7,24 @@
 .header-nav{
 
 	> .row{
-		display: flex;
-		align-items: center;
-		height: 90px;
+		@media(max-width: $screen-xs-max){
+			display: flex;
+			flex-direction: column;
+		}
+		@media(max-width: $screen-xs){
+			padding-bottom: 15px;
+		}
+		@media(min-width: $screen-xs-max) and (max-width: $screen-md){
+			padding: {
+				top: 15px;
+				bottom: 15px;
+			}
+		}
+		@media(min-width: $screen-md-max){
+			display: flex;
+			align-items: center;
+			height: 90px;	
+		}
 	}
 	ul{
 		margin: 0;
@@ -18,8 +33,14 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
+		@media(max-width: $screen-xs-max){
+			order: 2;
+			flex-direction: column;
+		}
 	}
-	li{}
+	li{
+	}
 	a{
 		display: inline-block;
 		padding: 15px 25px;
@@ -55,6 +76,16 @@
 		
 		height: 90px;
 		background-color: $color-orange;
+		
+		@media(max-width: $screen-xs){
+			margin-bottom: 15px;
+		}
+		@media(min-width: $screen-xs-max) and (max-width: $screen-md){
+			margin: {
+				top: 15px;
+				bottom: 15px;
+			}
+		}
 
 		img{
 			max-width: 145px;
