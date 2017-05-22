@@ -1,0 +1,15 @@
+.ck-editor{
+	@media(max-width: $screen-sm){
+		font-size: 14px;
+		line-height: 18px;
+	}
+	@media(min-width: $screen-xs-max){
+		font-size: 16px;
+		line-height: 20px;
+	}
+	
+	color: $color-gray;
+	font:{
+		family: $rubik;
+	}
+}

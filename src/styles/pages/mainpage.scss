@@ -1,3 +1,4 @@
+/* slider */
 .mainpage-slider-wrapper{
 
 	.msw-slide{
@@ -52,5 +53,25 @@
 		@media(min-width: $screen-sm-max){
 			
 		}
+	}
+}
+
+/* food recipe */
+.food-recipe{
+	text-align: center;
+	min-height: 475px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	background: {
+		image: url('#{$images-path}food-recipe-bg.png');
+		position: 50% bottom;
+		repeat: no-repeat;
+		size: cover;
+	}
+	.paw-text{
+		@extend .paw-text-style;
 	}
 }

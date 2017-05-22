@@ -2,17 +2,12 @@
 	@media(max-width: $screen-sm){
 		padding-bottom: 20px;
 	}
-	@media(min-width: $screen-sm-max){
+	/* @media(min-width: $screen-sm-max){
 		padding-bottom: 60px;
-	}
-
+	} */
 
 	.paw-text{
 		@extend .paw-text-style;
-		margin: {
-			bottom: 25px;
-		}
-		text-align: center;
 	}
 
 	.row{
