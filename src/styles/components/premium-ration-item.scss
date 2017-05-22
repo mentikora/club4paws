@@ -1,4 +1,6 @@
-.premium-ration-wrapper{}
+.premium-ration-wrapper{
+	@extend .clearfix;
+}
 
 .premium-ration-item{
 	text-transform: uppercase;
@@ -42,19 +44,12 @@
 
 	&__text{
 		display: inline-block;
-
-		line-height: 16px;
-		color: $color-gray;
 		
 		margin: {
 			bottom: 25px;
 		}
 		
-		font: {
-			size: 16px;
-			family: $rubik;
-		}
-
+		@extend .paw-text-style;
 	}
 
 	&__title{

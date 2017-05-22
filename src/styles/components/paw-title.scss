@@ -1,0 +1,32 @@
+.paw-title{
+	padding: {
+		bottom: 55px;
+	}
+	margin: {
+		top: 0;
+		bottom: 20px;
+	}
+	text: {
+		align: center;
+		transform: uppercase;
+	}
+	color: $color-gray;
+	font: {
+		family: $raleway;
+		weight: 900;
+	}
+
+	background: {
+		image: url('#{$images-path}paw-title-bg.png');
+		repeat: no-repeat;
+		position: 50% bottom;
+	}
+	@media(max-width: $screen-xs){
+		font-size: 35px;
+		line-height: 40px;
+	}
+	@media(min-width: $screen-xs-max){
+		font-size: 50px;
+		line-height: 50px;
+	}
+}

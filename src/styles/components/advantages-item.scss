@@ -1,0 +1,44 @@
+.advantages-item-wrapper{
+	@media(max-width: $screen-sm){
+		padding-bottom: 20px;
+	}
+	@media(min-width: $screen-sm-max){
+		padding-bottom: 60px;
+	}
+
+
+	.paw-text{
+		@extend .paw-text-style;
+		margin: {
+			bottom: 25px;
+		}
+		text-align: center;
+	}
+
+	.row{
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+.advantages-item{
+	text-align: center;
+	margin: {
+		top: 20px;
+		bottom: 20px;
+	}
+
+	&__image{
+		max-width: 170px;
+	}
+	&__title{
+		text-transform: uppercase;
+		color: $color-gray;
+		line-height: 20px;
+		font: {
+			size: 18px;
+			weight: 700; 
+			family: $rubik;
+		}
+	}
+}
