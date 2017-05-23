@@ -1,0 +1,20 @@
+.product-line-wrapper{}
+
+.product-line-item{
+  display: block;
+  text: {
+    align: center;
+    decoration: none;
+    transform: uppercase;
+  }
+
+  &__image{
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  &__name{
+    color: $color-gray;
+  }
+}
