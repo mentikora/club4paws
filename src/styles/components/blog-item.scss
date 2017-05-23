@@ -5,14 +5,19 @@
   display: block;
   text-decoration: none;
   
-  height: 400px;
   overflow: hidden;
+  
+  @media(min-width: $screen-sm-max){
+    height: 400px;
+  }
+  @media(max-width: $screen-sm){
+    margin-bottom: 30px;
+  }
 
   &__title{
     position: absolute;
     z-index: 3;
-    top: 65px;
-    left: 65px;
+    
     right: 30px;
     margin: 0;
 
@@ -22,12 +27,22 @@
       transform: uppercase;
     }
     font: {
-      size: 35px;
       family: $raleway;
       weight: 900;
     }
 
     transition: $blog-item-transition;
+
+    @media(max-width: $screen-xs){
+      top: 30px;
+      left: 30px;
+      font-size: 18px;
+    }
+    @media(min-width: $screen-xs-max){
+      top: 65px;
+      left: 65px;
+      font-size: 35px;
+    }
   }
 
   img{
