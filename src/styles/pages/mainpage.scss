@@ -79,6 +79,7 @@
 /* video block */
 .video-block{
 	iframe{
+		display: block;
 		width: 100%;
 		@media(min-width: $screen-sm-max) and (max-width: $screen-lg){
 			height: 500px;

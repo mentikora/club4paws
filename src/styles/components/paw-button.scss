@@ -1,0 +1,24 @@
+.paw-button{
+  display: inline-block;
+  height: 75px;
+  line-height: 75px;
+  padding: {
+    left: 40px;
+    right: 40px;
+  }
+  box-shadow: 0 0 50px 0 rgba(0,0,0, .2);
+  border-radius: 45px;
+  transition: $transition;
+  
+  text-decoration: none;
+  color: $color-gray;
+  font: {
+    size: 18px;
+    family: $rubik;
+    weight: 900;
+  }
+
+  &:hover{
+    box-shadow: 0 0 25px 0 rgba(0,0,0, .2);
+  }
+}
