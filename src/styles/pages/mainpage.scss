@@ -93,10 +93,15 @@
 /* blog preview */
 .blog-preview-wrapper{
 	@media(max-width: $screen-lg){
-		padding-top: 50px;
+		padding: {
+			top: 50px;
+			bottom: 50px;
+		}
 	}
 	@media(min-width: $screen-lg-max){
-		padding-top: 100px;
+		padding: {
+			top: 100px;
+		}
 	}
 	text-align: center;
 
@@ -109,17 +114,9 @@
 	}
 
 	.paw-button{
+
 		@media(min-width: $screen-lg-max){
-			margin: {
-				top: 50px;
-				bottom: 80px;
-			}
-		}
-		@media(max-width: $screen-lg){
-			margin: {
-				top: 30px;
-				bottom: 30px;
-			}
+			margin-bottom: 80px;
 		}
 	}
 }
