@@ -1,0 +1,58 @@
+.chess-grid{
+	display: flex;
+
+	@media(max-width: $screen-sm){
+		flex-direction: column;
+	}
+
+	.chess-item{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+		color: $color-white;
+		text: {
+			align: center;
+			transform: uppercase;
+		}
+		font: {
+			family: $rubik;
+			weight: 700;
+		}
+		background: {
+			position: 50%;
+			size: cover;
+			repeat: no-repaet;
+		}
+		
+		@media(max-width: $screen-sm){
+			height: 300px;
+		}
+		@media(min-width: $screen-sm-max){
+			height: 450px
+		}
+		
+		@media(max-width: $screen-md){
+			font-size: 14px;
+			line-height: 24px;
+
+			padding: {
+				left: 30px;
+				right: 30px;
+			}
+		}
+		@media(min-width: $screen-md-max){
+			font-size: 16px;
+			line-height: 30px;
+
+			padding: {
+				left: 60px;
+				right: 60px;
+			}
+		}
+
+		&__no-bg{
+			color: $color-lightgray;
+		}
+	}
+}

@@ -1,0 +1,11 @@
+.responsible-reasons-wrapper{
+	padding-top: 90px;
+	.paw-text{
+		@extend .paw-text-style;
+	}
+	> .ck-editor{
+		text-align: center;
+
+		margin-bottom: 60px;
+	}
+}
