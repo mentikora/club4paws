@@ -9,6 +9,8 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+
+		position: relative;
 		
 		color: $color-white;
 		text: {
@@ -23,6 +25,35 @@
 			position: 50%;
 			size: cover;
 			repeat: no-repaet;
+		}
+
+		&::before{
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: {
+				color: rgba($color-black, .4);
+			}
+		}
+
+		&__no-bg{
+			color: $color-lightgray;
+		}
+
+		&__no-bg,
+		&__no-text{
+			&::before{
+				display: none;
+			}
+		}
+
+		p{
+			position: relative;
+			z-index: 2;
+			margin: 0;
 		}
 		
 		@media(max-width: $screen-sm){
@@ -49,10 +80,6 @@
 				left: 60px;
 				right: 60px;
 			}
-		}
-
-		&__no-bg{
-			color: $color-lightgray;
 		}
 	}
 }
