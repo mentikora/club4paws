@@ -9,3 +9,16 @@
 		margin-bottom: 60px;
 	}
 }
+
+.advantages-item-wrapper__about-page{
+	padding: {
+		top: 80px;
+		bottom: 40px;
+	}
+	background: {
+		color: #f2f2f2;
+	}
+	.paw-text{
+		@extend .paw-text-style;
+	}
+}
