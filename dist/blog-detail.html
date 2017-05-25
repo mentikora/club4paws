@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+	<title>club4paws</title>
+
+	<script type="text/javascript" src="bundle.js"></script>
+</head>
+<body>
+
+<!-- main wrapper -->
+<main id="wrapper">
+
+	<!-- page-top-banner -->
+	<section class="page-top-banner" style="background-image: url('images/mainpage-slide-1.jpg');">
+		<div class="container">
+			<h1 class="page-top-banner__title">ПОСТ ПРО ВАШОГО УЛЮБЛЕНОГО КОТА ЧИ СОБАКУ</h1>
+		</div>
+	</section>
+
+	<!-- breadcrumbs -->
+	<div class="breadcrumbs-wrapper">
+		<ul>
+			<li><a href="javascript:void(0);">homepage</a></li>
+			<li><a href="javascript:void(0);">sub</a></li>
+			<li><span>active</span></li>
+		</ul>
+	</div>
+
+	<!-- blog detail wrapper -->
+	<div class="blog-detail-wrapper container">
+
+		<!-- slider -->
+		<div class="blog-detail-slider hidden-xs">
+			<div>
+				<img src="images/mainpage-slide-1.jpg" alt="">
+			</div>
+			<div>
+				<img src="images/mainpage-slide-2.jpg" alt="">
+			</div>
+			<div>
+				<img src="images/mainpage-slide-1.jpg" alt="">
+			</div>
+		</div>
+		
+		<!-- title -->
+		<div class="row">
+			<h2 class="block-detail-title col-sm-8 col-sm-offset-2">
+				PELLENTESQUE RHONCUS ALIQUAM MATTIS
+			</h2>
+		</div>
+
+		<!-- text -->
+		<div class="row">
+			<div class="blog-detail-text col-sm-8 col-sm-offset-2">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error nulla aliquid dolore at, quod hic sint expedita! Cupiditate, iste. Itaque natus sint cupiditate consequuntur, expedita repudiandae iure quos molestiae vel.
+			</div>
+		</div>		
+
+		<!-- quote -->
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="blog-detail-quote">
+					<div class="col-sm-8 col-sm-offset-2">
+						Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- image single -->
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="blog-detail-image blog-detail-image--single">
+					<img src="images/mainpage-slide-1.jpg" alt="">
+				</div>
+			</div>
+		</div>
+
+		<!-- 2 images -->
+		<div class="row blog-detail-image">
+			<div class="col-md-6">
+				<img src="images/mainpage-slide-1.jpg" alt="">
+			</div>
+			<div class="col-md-6">
+				<img src="images/mainpage-slide-1.jpg" alt="">
+			</div>
+			<div class="col-md-6">
+				<img src="images/mainpage-slide-1.jpg" alt="">
+			</div>
+			<div class="col-md-6">
+				<img src="images/mainpage-slide-1.jpg" alt="">
+			</div>
+		</div>
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/scripts/slick.min.js"></script>
+
+<script>
+	$('.blog-detail-slider').slick({
+		dots: true,
+	  infinite: true,
+	  speed: 500,
+	  fade: true,
+	  autoplay: true,
+	  arrows: false,
+	  cssEase: 'linear'
+	});
+</script>
+
+</body>
+</html>
