@@ -1,0 +1,17 @@
+.product-types-wrapper{
+	@media(min-width: $screen-xs-max) and (max-width: $screen-sm){
+		margin-top: 50px;
+	}
+	@media(min-width: $screen-sm-max){
+		margin-top: 100px;
+	}
+}
+
+.product-types-wrapper,
+.life-stage-wrapper,
+.premium-ration-wrapper,
+.page-bottom-slider{
+	.paw-text{
+		@extend .paw-text-style;
+	}
+}
