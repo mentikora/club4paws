@@ -74,5 +74,13 @@
 		@include header-top-item-proportions;
 
 		float: right;
+
+		/* now used just only for fake-test */ 
+		select{
+			height: 100%;
+			border: 0;
+			outline: 0;
+			background-color: inherit;
+		}
 	}
 }
