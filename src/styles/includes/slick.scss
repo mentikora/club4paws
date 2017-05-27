@@ -120,16 +120,9 @@
 
     transition: $transition;
     
-    @media(max-width: $screen-xs){
-        width: 35px;
-        height: 56px;
-        margin-top: -28px;
-    }
-    @media(min-width: $screen-xs-max){
-        width: 50px;
-        height: 106px;
-        margin-top: -53px;
-    }
+    width: 50px;
+    height: 106px;
+    margin-top: -53px;
 
     &:hover{
         background: {
