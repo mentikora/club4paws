@@ -57,14 +57,14 @@
     display: inline-block;
     max-width: 100%;
     height: auto;
-
-    margin: {
-      bottom: 30px;
+    
+    @media(min-width: $screen-sm-max){
+      margin-bottom: 30px;
     }
-
     @media(max-width: $screen-sm){
       margin: {
-        top: 30px;
+        top: 15px;
+        bottom: 15px;
       }
     }
 
@@ -76,11 +76,18 @@
   &__name{
     color: $color-gray;
     transition: $transition;
-    line-height: 18px;
     font: {
-      size: 16px;
       family: $rubik;
       weight: 700;
+    }
+    
+    @media(max-width: $screen-xs){
+      font-size: 14px;
+      line-height: 16px;
+    }
+    @media(min-width: $screen-xs-max){
+      font-size: 16px;
+      line-height: 18px;
     }
   }
 
