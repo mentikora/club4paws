@@ -4,7 +4,7 @@
   line-height: 75px;
   padding: {
     left: 40px;
-    right: 40px;
+    right: 85px;
   }
   box-shadow: 0 0 50px 0 rgba(0,0,0, .2);
   border-radius: 45px;
@@ -20,8 +20,24 @@
     family: $rubik;
     weight: 900;
   }
+  background: {
+    repeat: no-repeat;
+    size: 30px;
+    position: calc(100% - 40px) 50%;
+    image: url('#{$images-path}paw_button_list.svg');
+  }
 
   &:hover{
+    color: $color-orange;
     box-shadow: 0 0 25px 0 rgba(0,0,0, .2);
+    background: {
+      image: url('#{$images-path}paw_button.svg');
+    }
+  }
+}
+
+.premium-ration-item__dogs .paw-button:hover{
+  background: {
+    image: url('#{$images-path}paw_button_dogs.svg');
   }
 }
