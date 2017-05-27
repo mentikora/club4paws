@@ -10,7 +10,10 @@
   border-radius: 45px;
   transition: $transition;
   
-  text-decoration: none;
+  text: {
+    decoration: none;
+    transform: uppercase;
+  }
   color: $color-gray;
   font: {
     size: 18px;

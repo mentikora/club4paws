@@ -1,0 +1,75 @@
+.page-bottom-slider-wrapper{
+	@media(min-width: $screen-md-max){
+		padding: {
+			left: 70px;
+			right: 50px;
+			bottom: 100px;
+		}
+	}
+	@media(max-width: $screen-sm-max) and (max-width: $screen-md){
+		padding: {
+			left: 35px;
+			right: 35px;
+			bottom: 50px;
+		}
+	}
+}
+.page-bottom-slider{
+	
+	border: {
+		top: 1px solid $color-lightgray;
+		bottom: 1px solid $color-lightgray;
+		left: 1px solid $color-lightgray;
+	}
+
+	.slick-slide{
+		outline: 0;
+		height: 100%;
+		padding: {
+			left: 25px;
+			right: 25px;
+			top: 40px;
+		}
+		border: {
+			right: 1px solid $color-lightgray;
+		}
+
+		@media(min-width: $screen-sm-max){
+			height: 410px;
+		}
+	}
+	.slick-arrow{
+		border: 1px solid $color-lightgray;
+		
+		&.slick-prev{
+			left: -25px;
+
+			&:hover{
+				background: {
+					image: url('#{$images-path}slider-prev-hover__white.svg');
+				}
+			}
+		}
+		&.slick-next{
+			right: -25px;
+			&:hover{
+				background: {
+					image: url('#{$images-path}slider-next-hover__white.svg');
+				}
+			}
+		}
+
+		&:hover{
+			background: {
+				color: $color-orange;
+			}
+		}
+	}
+
+	img{
+		margin: {
+			left: auto;
+			right: auto;
+		}
+	}
+}
