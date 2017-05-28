@@ -1,8 +1,17 @@
 .product-line-wrapper{
   @extend .clearfix;
+
   padding: {
     bottom: 80px;
   }
+
+  @media(min-width: $screen-sm-max){
+    padding: {
+      left: 55px;
+      right: 55px;
+    }
+  }
+
   .paw-text{
     @extend .paw-text-style;
   

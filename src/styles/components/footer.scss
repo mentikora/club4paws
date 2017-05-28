@@ -136,6 +136,8 @@
 	}
 
 	.footer-logo{
+		max-width: 145px;
+		min-width: 145px;
 		@media(min-width: $screen-xs-max) and (max-width: $screen-md){
 			width: 50%;
 			display: block;
@@ -169,7 +171,14 @@
 	}
 	a{
 		@include social-button();
+
 		font-size: 35px;
+
+		&:first-child{
+			@media(min-width: $screen-lg-max){
+				margin-right: 13px;
+			}
+		}
 	}
 }
 
@@ -235,4 +244,15 @@
 
 .footer-images{
 	text-align: center;
+
+	@media(min-width: $screen-md-max){
+		display: flex;
+		justify-content: space-between;
+	}
+
+	img{
+		display: inline-block;
+		max-width: 100%;
+		height: auto;
+	}
 }
