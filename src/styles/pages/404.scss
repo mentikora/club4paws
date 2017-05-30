@@ -10,6 +10,13 @@
   text: {
     align: center;
   }  
+
+  @media(max-width: $screen-xs){
+    padding: {
+      left: 15px;
+      right: 15px;
+    }
+  }
 }
 
 .page-error{
@@ -18,5 +25,10 @@
     &__link{
       display: block;
     }
+  }
+  &--image{
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
   }
 }
