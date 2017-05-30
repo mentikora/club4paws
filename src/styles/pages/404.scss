@@ -20,13 +20,52 @@
 }
 
 .page-error{
-  &--title{}
+  &--title{
+    margin: 0;
+    color: $color-gray;
+    font: {
+      size: 35px;
+      weight: 900;
+      family: $raleway;
+    }
+    text: {
+      transform: uppercase;
+    }
+  }
   &--text{
+    margin: {
+      bottom: 45px;
+    }
+    color: $color-gray;
+    text: {
+      transform: uppercase;
+    }
+    font: {
+      size: 18px;
+      weight: 700;
+      family: $rubik;
+    }
+
     &__link{
       display: block;
+      margin: {
+        top: 20px;
+        bottom: 20px;
+      }
+      text: {
+        transform: lowercase;
+      }
+      font: {
+        size: 16px;
+        weight: normal;
+      }
     }
   }
   &--image{
+    margin: {
+      top: 35px;
+      bottom: 25px;
+    }
     display: inline-block;
     max-width: 100%;
     height: auto;
