@@ -57,6 +57,22 @@
 		}
 	}
 
+	&--social-divider{
+		margin: {
+			top: 15px;
+			right: 10px;
+		}
+		width: 50px;
+		height: 1px;
+		background: {
+			color: $color-lightgray;
+		}
+
+		@media(max-width: $screen-xs){
+			display: none;
+		}
+	}
+
 	&--row{
 		display: flex;
 		justify-content: flex-start;
@@ -69,8 +85,7 @@
 		}
 		
 		span,
-		p,
-		a{
+		p{
 			display: block;
 			margin: {
 				top: 4px;
@@ -103,6 +118,19 @@
 					right: 20px;
 				}
 			}
+			
+			&.icon-facebook,
+			&.icon-youtube2{
+				color: #898989;
+				width: auto;
+				transition: $transition;
+				background: {
+					color: inherit;
+				}
+				font: {
+					size: 33px;
+				}
+			}
 		}
 		span{
 			display: inline-block;
@@ -124,7 +152,32 @@
 			}
 		}
 		p{}
-		a{}
+		a{
+			text: {
+				decoration: none;
+			}
+
+			&:hover i{
+				color: $color-orange;
+			}
+
+			@media(max-width: $screen-xs){
+				display: inline-block;
+				margin: {
+					top: 5px;
+				}
+			}
+		}
+		/* used with socials */ 
+		img{
+			display: inline-block;
+			width: 30px;
+			height: 30px;
+
+			@media(min-width: $screen-xs-max){
+				margin-right: 20px;
+			}
+		}
 	}
 }
 
@@ -258,6 +311,83 @@
 	.paw-button{
 		margin: {
 			top: 50px;
+		}
+	}
+}
+
+// 
+.contacts{
+	&-our-partners,
+	&-internet-shops,
+	&-regionals,
+	&-importers{
+
+		@media(max-width: $screen-md){
+			padding: {
+				bottom: 50px;
+			}
+		}
+		@media(min-width: $screen-md-max){
+			padding: {
+				bottom: 100px;
+			}
+		}
+
+		.paw-text{
+			@extend .paw-text-style;
+		}
+	}
+
+	&-our-partners .row{
+		@media(max-width: $screen-sm){
+			display: flex;
+			flex-wrap: wrap;
+		}
+	}
+}
+
+/* partners */ 
+.contacts-our-partners-block{
+	text: {
+		align: center;
+	}
+
+	div{
+		border: 1px solid $color-lightgray;
+		padding: 20px;
+
+		@media(min-width: $screen-sm-max){
+			margin: {
+				bottom: 30px;
+			}
+		}
+		@media(max-width: $screen-sm){
+			margin: {
+				top: 15px;
+				bottom: 5px;
+			}
+		}
+	}
+	
+	img{
+    max-width: 100%;
+    height: auto;
+	}
+	p{
+		color: $color-gray;
+		line-height: 20px;
+		font: {
+			weight: 700;
+			family: $rubik;
+		}
+		text: {
+			transform: uppercase;
+		}
+		@media(min-width: $screen-sm-max){
+			font-size: 16px;
+		}
+		@media(max-width: $screen-sm){
+			font-size: 14px;
 		}
 	}
 }
