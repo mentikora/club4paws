@@ -79,6 +79,15 @@
 /* video block */
 .video-block{
 	position: relative;
+	overflow: hidden;
+
+	@media(min-width: $screen-md-max){
+		height: 550px;
+	}
+
+	video{
+    width: 100%;
+	}
 
 	&::before{
 		content: '';
@@ -88,16 +97,6 @@
 		z-index: 5;
 		background: {
 			color: rgba($color-black, .4);
-		}
-	}
-	iframe{
-		display: block;
-		width: 100%;
-		@media(min-width: $screen-sm-max) and (max-width: $screen-lg){
-			height: 500px;
-		}
-		@media(min-width: $screen-lg-max){
-			height: 800px;
 		}
 	}
 }

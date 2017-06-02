@@ -7,8 +7,10 @@
   
   overflow: hidden;
   
-  @media(min-width: $screen-sm-max){
+  @media(min-width: $screen-md-max){
     height: 400px;
+  }
+  @media(min-width: $screen-sm-max){
     margin-bottom: 50px;
   }
   @media(max-width: $screen-sm){

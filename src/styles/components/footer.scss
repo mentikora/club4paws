@@ -17,6 +17,7 @@
 	}
 
 	.text{
+		display: flex;
 		height: 40px;
 		line-height: 40px;
 		margin-bottom: 15px;
@@ -32,10 +33,28 @@
 		@media(min-width: $screen-sm-max){
 			font-size: 16px;
 		}
-
+		
+		b,
+		span{
+			margin: {
+				left: 10px;
+			}
+		}
 		b{
 			text-transform: uppercase;
 			font-weight: 700;
+		}
+
+		i{
+			display: block;
+			background-color: $color-orange;
+			border-radius: $radius-circle;
+			color: $color-white;
+			flex: 0 0 36px;
+			height: 36px;
+			line-height: 36px;
+			text-align: center;
+			width: 36px;
 		}
 	}
 }
@@ -101,12 +120,14 @@
 		transform: uppercase;
 	}
 	font: {
-		size: 14px;
 		family: $rubik;
 	}
 	color: #898989;
 	@media(min-width: $screen-sm-max){
 		height: 50px;
+		font: {
+			size: 14px;
+		}
 	}
 	@media(max-width: $screen-sm){
 		padding: {
@@ -115,8 +136,18 @@
 		}
 		flex-direction: column;
 		align-items: center;
+
+		font: {
+			size: 12px;
+		}
 	}
-	.copyright{}
+	.copyright{
+		@media(max-width: $screen-sm){
+			margin: {
+				bottom: 10px;
+			}
+		}
+	}
 	.welldo{
 		a{
 			text-decoration: none;
@@ -137,7 +168,6 @@
 
 	.footer-logo{
 		max-width: 145px;
-		min-width: 145px;
 		@media(min-width: $screen-xs-max) and (max-width: $screen-md){
 			width: 50%;
 			display: block;
@@ -149,12 +179,16 @@
 	}
 
 	.kormotech-text{
+		display: block;
 		margin-top: 15px;
 		color: #898989;
 		line-height: 16px;
 		font: {
 			size: 16px;
 			family: $rubik;
+		}
+		text: {
+			decoration: none;
 		}
 		@media(max-width: $screen-xs){
 			display: none;
@@ -166,19 +200,18 @@
 }
 
 .footer-socials{
+
 	@media(max-width: $screen-md){
 		text-align: center;
 	}
+	@media(min-width: $screen-md){
+		display: flex;
+		justify-content: space-around;
+	}
 	a{
 		@include social-button();
-
+		
 		font-size: 35px;
-
-		&:first-child{
-			@media(min-width: $screen-lg-max){
-				margin-right: 13px;
-			}
-		}
 	}
 }
 

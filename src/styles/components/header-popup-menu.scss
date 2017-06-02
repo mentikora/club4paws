@@ -1,7 +1,8 @@
 .header-popup-menu{
+  display: none;
   padding: {
     top: 45px;
-    bottom: 45px;
+    bottom: 40px;
     left: 20px;
     right: 20px;
   }
@@ -43,7 +44,7 @@
     }
     li{
       margin: {
-        bottom: 25px;
+        bottom: 20px;
       }
     }
   }

@@ -115,7 +115,7 @@
 
     cursor: pointer;
     background: {
-        color: $color-white;
+        color: rgba($color-white, .5);
         repeat: no-repeat;
         position: 50%;
         size: 11px;
@@ -131,6 +131,7 @@
     &:hover{
         background: {
             size: 15px;
+            color: rgba($color-white, 1);
         }
     }
 

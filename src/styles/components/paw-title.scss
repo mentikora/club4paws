@@ -19,7 +19,7 @@
 	background: {
 		image: url('#{$images-path}paw-title-bg.png');
 		repeat: no-repeat;
-		position: 50% bottom;
+		position: 50% calc(100% - 10px);
 	}
 	@media(max-width: $screen-xs){
 		font-size: 32px;

@@ -280,7 +280,7 @@
 	label{
 		margin-bottom: 5px;
 		display: block;
-		color: $color-lightgray;
+		color: $color-semigray;
 		line-height: 24px;
 		font: {
 			size: 14px;
@@ -330,6 +330,12 @@
 		@media(min-width: $screen-md-max){
 			padding: {
 				bottom: 100px;
+			}
+		}
+		
+		.paw-title{
+			margin: {
+				bottom: 50px;
 			}
 		}
 
