@@ -2,9 +2,6 @@
 	@media(max-width: $screen-sm){
 		padding-bottom: 20px;
 	}
-	/* @media(min-width: $screen-sm-max){
-		padding-bottom: 60px;
-	} */
 
 	.paw-text{
 		@extend .paw-text-style;
@@ -35,5 +32,18 @@
 			weight: 700; 
 			family: $rubik;
 		}
+	}
+	@media(max-width: $screen-xs){
+		padding: {
+			left: 15px;
+			right: 15px;
+		}
+		flex: 0 0 100%;
+	}
+	@media(min-width: $screen-xs-max) and (max-width: $screen-lg){
+		flex: 0 0 50%;
+	}
+	@media(min-width: $screen-lg-max){
+		flex: 0 0 33%;
 	}
 }
