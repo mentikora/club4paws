@@ -222,19 +222,38 @@
 			bottom: 30px;
 		}
 		font: {
-			size: 50px;
 			family: $raleway;
 			weight: 900;
+		}
+		@media(max-width: $screen-xs){
+			font: {
+				size: 25px;
+			}
+		}
+		@media(min-width: $screen-xs-max){
+			font: {
+				size: 50px;
+			}
 		}
 	}
 	&--text{
 		text: {
 			transform: uppercase;
+			align: center;
 		}
 		font: {
-			size: 16px;
 			family: $rubik;
 			weight: 700;
+		}
+		@media(max-width: $screen-xs){
+			font: {
+				size: 12px;
+			}
+		}
+		@media(min-width: $screen-xs-max){
+			font: {
+				size: 16px;
+			}
 		}
 	}
 
