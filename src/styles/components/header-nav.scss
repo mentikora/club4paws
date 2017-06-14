@@ -1,3 +1,11 @@
+/* set bg-color for logo - dogs/cats */
+.body-wrapper-dogs .logo{
+	background-color: $color-darkblue;
+}
+.body-wrapper-cats .logo{
+	background-color: $color-orange;
+}
+
 .header-nav-wrapper{
 	position: relative;
 	z-index: 200;
@@ -78,6 +86,7 @@
 		align-items: center;
 		
 		height: 90px;
+
 		background-color: $color-orange;
 		
 		@media(max-width: $screen-xs){
